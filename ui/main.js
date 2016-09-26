@@ -1,5 +1,5 @@
 var button=document.getElementById('button');
-var counter=0;
+
 button.onclick =function() {
     var request = new XMLHttpRequest();
     request.onreadystatechage=function () {
@@ -8,8 +8,8 @@ button.onclick =function() {
         if(request.status == 200)
         {
           var counter=request.responseText;
-var span=document.getElementById('count');
-span.innerHTML=counter.toString();   
+          var span=document.getElementById('count');
+          span.innerHTML=counter.toString();   
         }
        }
     };

@@ -3,7 +3,7 @@ var counter=0;
 button.onclick =function() {
     var request = new XMLHttpRequest();
     request.onreadystatechage=function () {
-      if(request.readstate==XMLHttpRequest.Done)
+      if(request.readstate==XMLHttpRequest.DONE)
        {
         if(request==200)
         {

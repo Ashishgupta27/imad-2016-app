@@ -1,0 +1,166 @@
+div.container {
+     	height:600px;
+	width:100%;
+	}
+div.head {
+	height:240px;
+        width:100%;
+	background-color:#35fddf;
+	}
+div.head1 {
+	height:130px;
+	width:100%;
+       
+        background-color:red;
+	}
+div.head2 {
+	height:70px;
+	width:100%;	
+	}
+div.head21 {
+        float:left;
+	height:100%;
+	width:29%;
+         background-color:white;
+
+	}
+div.head22 {
+	float:left;
+        height:100%;
+	width:70%;
+        
+	}
+div.head2a {
+	height:10px;
+	background-color:yellow;
+        }
+div.head2b {	
+	height:50px;
+	}
+div.head2b1 {
+	float:left;
+	
+	}
+input {
+    text-sixe:35px;
+    border: 0px solid;color: #CCC;
+}
+
+div.head2b2{
+	float:left;
+	width:883px;
+        height:50px;
+        background-color:white;
+	}
+div.ha { 
+	float:left;
+       height:15px;
+       width:853px;
+	}
+div.hb{ 
+	float:right;
+       height:15px;
+       width:30px;
+	}
+div.head2c {
+	height:10px;
+	background-color:yellow;
+         }
+
+div.menu {
+        height:70px;
+   	width:auto;
+        background-color:#35fddf;
+	}
+div.menu ul {
+     margin:0px;
+     padding:0;
+    cursor:pointer;
+    }
+div.menu li {
+     list-style-type:none;
+     float:left;
+     display:block;
+     height:70px;
+     width:265px;
+     text-align:center;
+     line-height:55px;
+     font-size:17px;
+    }
+  div.menu li a {
+    text-decoration:none;
+    color:#fff;
+    }
+ 
+  div.menu li:Hover {
+    background-color:#ccc;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  div.menu li button {
+   width:265px;
+   height:100%;
+   background-color:#35fddf;
+    }
+	
+
+div.content {
+	height:600px;
+	width:100%;
+	background-color:yellow;
+        
+	}
+div.con1 {
+    position: absolute;
+    left: 450px;
+    top: 350px;
+	border-radius: 25px;
+    
+     height:300px;
+     width:500px;
+     background-color:white;    
+}
+div.c2 {
+     border-radius:5px;
+     position: absolute;
+     left: 50px;
+     top: 70px;
+     height:30px;
+     width:340px;
+     background-color:white;
+     
+	} 
+div.form-input1 {
+     position:absolute;
+     left:33px;
+     top:5px;
+    }
+div.form-input2 {
+     position:absolute;
+     left:33px;
+     top:5px;
+    }
+div.c3 {
+ border-radius:5px;
+     position: absolute;
+     left: 50px;
+     top: 120px;
+     height:30px;
+     width:340px;
+     background-color:white;
+     
+}
+div.c4 {
+      border-radius:5px;
+     position: absolute;
+     left:150px;
+     top: 250px;
+     height:30px;
+     width:150px;
+    
+}
+
+div.footer {
+	height:50px;
+	width:100%;
+	background-color:red;
+	}

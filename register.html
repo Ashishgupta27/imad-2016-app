@@ -1,0 +1,133 @@
+<html>
+
+ <head>
+  <titleREGISTRATION PAGE</title>
+   <link rel="stylesheet" type="text/css" href="registerstyle.css"> 
+   <link rel="icon" type="images/jpg" href="reg1.jpg" />
+   <meta http-equiv="refresh" content="500">
+table#01{
+padding:absolute;
+top:50px;
+left:100px;
+background-color:red;
+}
+   <script >
+function reset1()
+{
+x=confirm("It will clear all the text entered")
+if(x==true)
+{
+document.form1.t1.value=""
+document.form1.t2.value=""
+document.form1.ta.value=""
+document.form1.t3.value=""
+document.form1.r1[0].checked=false
+document.form1.r1[1].checked=false
+document.form1.c1.checked=false
+document.form1.c2.checked=false
+document.form1.c3.checked=false
+document.form1.c4.checked=false
+document.form1.c5.checked=false
+document.form1.c6.checked=false
+document.form1.t1.focus()
+}
+}
+
+function check()
+{
+if((document.form1.t1.value=="")||(!(isNaN(document.form1.t1.value))))
+{
+alert("please enter the correct name")
+document.form1.t1.value=""
+document.form1.t1.focus()
+}
+else if((document.form1.t2.value=="")||(isNaN(document.form1.t2.value)))
+{
+alert("please enter the age correctly")
+document.form1.t2.value=""
+document.form1.t2.focus()
+}
+else if(document.form1.t2.value>40)
+{
+alert("Sorry you age is beyound the limit")
+document.form1.t2.value=""
+document.form1.t2.focus()
+}
+else if(document.form1.ta.value=="")
+{
+alert("please enter the address")
+document.form1.ta.focus()
+}
+else if((document.form1.r1[0].checked==false)&&(document.form1.r1[1].checked==false))
+{
+alert("please select the radio button")
+document.form1.r1[0].focus()
+}
+else if((document.form1.c1.checked==false)&&(document.form1.c2.checked==false)&&(document.form1.c3.checked==false)&&(document.form1.c4.checked==false)&&(document.form1.c5.checked==false))
+{
+alert("please select the the languages known")
+document.form1.c1.focus()
+}
+else if(document.form1.t3.value=="")
+{
+alert("please enter the password")
+document.form1.t3.focus()
+}
+else if((document.form1.t1.value!="")&&(document.form1.t2.value!="")&&(document.form1.t3.value!="")&&(document.form1.ta.value!="")&&((document.form1.r1[0].checked!=false)||(document.form1.r1[0].checked!=false))&&((document.form1.c1.checked!=false)||(document.form1.c2.checked!=false)||(document.form1.c3.checked!=false)||(document.form1.c4.checked!=false)||(document.form1.c5.checked!=false)))
+{
+x=confirm("you have entered the datas correctly,want to submit the form")
+if(x)
+{
+document.lay.visibility="show"
+}
+}
+}
+</script>
+ </head>
+ <body  style="font-size:15pt;font-family:Garamond" onload=document.form1.t1.focus()><center> >
+  <div class="container">
+    <div class="header">
+     <div class=left1>  <img src="logo.png"  width="300px"height="100%"></img></div>
+     <center><p><H2>REGISTER FOR MEMBERSHIP</H2></p></center>
+   </div>
+   <div class="menu">
+    <ul>
+     
+       <li><abbr title="HOME"><a href="home.html"><button><img src="images.png" height="50px"></img>HOME</button></a></abbr></li>
+       <li><abbr title="CONTACT"><a href="contact.html"><button><img src="cont.jpg" height="50px"></img>CONTACT</button></a></abbr></li>
+       <li><abbr title="ABOUT"><a href="about.html"><button><img src="about.jpg" height="50px"></img>ABOUT</button></a></abbr></li>
+       <li><abbr title="SERVICE"><a href="service.html"><button><img src="Service.jpg" height="50px"></img>SERVICES</button></a></abbr></li>
+       <li><abbr title="LOGIN"><a href="login.html"><button><img src="login.jpg" height="50px"></img>LOGIN</button></a></abbr></li>
+    </ul>
+   </div>
+   <div class="content">
+  
+     <div class="con1">
+                
+		<div class="c1">
+	          	<h2>ENTRY FORM</h2></center>
+			<form name=form1 method=post >
+			<table id="01" name=tab cellspacing=30pt>
+			<tr><td align=left><h2>Enter your Name :</h2> </td><td align=right><input type=text name=t1 size=18>
+			<tr><td align=left><h2>Enter your Age :</h2> </td><td align=right><input type=text name=t2 maxlength=3 size=18>
+			<tr><td align=left><h2>Enter your Address :</h2> </td><td align=right><textarea name=ta rows=5 cols=15></textarea>
+			<tr><td align=left><h2>Sex :</h2> </td><td align=left><input type=radio name=r1 value="female">Female<br>
+			<input type=radio name=r1 value=male>Male</td>
+			<tr><td align=left><h2>Enter your Password :</h2> </td><td align=right><input type=password name=t3 size=18>
+			<tr><td align=left><h2>Enter your Confirm Password :</h2> </td><td align=right><input type=password name=t3 size=18>
+			</table><center>
+			<input type=button value=" reset " onClick=reset1()>
+			<input type=button value=" check " onClick=check()>
+			<h3>Before submitting the datas please click the check Button</h3>
+			<input type="submit" value=" submit "></center>	
+			</form>
+ 
+	    </div>
+	
+    </div>
+  
+  
+   <div class="footer"><center><h2>COPY RIGHT <sup>@</sup></h2></center></div>
+  </div>
+ </body>
+</html>

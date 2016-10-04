@@ -20,7 +20,7 @@ app.get('/activity_three', function (req,res){
 res.sendFile(path.join(__dirname, 'ui', 'Activity_three.html'));
 });
 app.get('/home', function (req,res){
-res.sendFile(path.join(__dirname, 'ui', 'home.html'));
+res.sendFile(path.join(__dirname, 'home.html'));
 });
 var counter=0;
 app.get('/counter', function (req,res){
